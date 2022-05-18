@@ -2174,14 +2174,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_app_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/app.css */ "./resources/css/app.css");
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/header */ "./resources/js/components/header.js");
 /* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/footer */ "./resources/js/components/footer.js");
-/* harmony import */ var _pages_Home_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Home/index */ "./resources/js/pages/Home/index.js");
+/* harmony import */ var _pages_home_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/home/index */ "./resources/js/pages/home/index.js");
 /* harmony import */ var _pages_about_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/about/index */ "./resources/js/pages/about/index.js");
 /* harmony import */ var _pages_login_index__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/login/index */ "./resources/js/pages/login/index.js");
 /* harmony import */ var _pages_transaction_index__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/transaction/index */ "./resources/js/pages/transaction/index.js");
 /* harmony import */ var _pages_register_index__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/register/index */ "./resources/js/pages/register/index.js");
 /* harmony import */ var _pages_account_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/account/index */ "./resources/js/pages/account/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-// require('./components/Example');
 
 
 
@@ -2199,37 +2198,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
-    className: "container",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.HashRouter, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_components_header__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Routes, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
-          path: "/",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_Home_index__WEBPACK_IMPORTED_MODULE_5__["default"], {}),
-          exact: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
-          path: "/Login",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_login_index__WEBPACK_IMPORTED_MODULE_7__["default"], {}),
-          exact: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
-          path: "/Transaction",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_transaction_index__WEBPACK_IMPORTED_MODULE_8__["default"], {}),
-          exact: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
-          path: "/About",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_about_index__WEBPACK_IMPORTED_MODULE_6__["default"], {}),
-          exact: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
-          path: "/Register",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_register_index__WEBPACK_IMPORTED_MODULE_9__["default"], {}),
-          exact: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
-          path: "/Account",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_account_index__WEBPACK_IMPORTED_MODULE_10__["default"], {}),
-          exact: true
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_components_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
-    })
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.HashRouter, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_components_header__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Routes, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_home_index__WEBPACK_IMPORTED_MODULE_5__["default"], {}),
+        exact: true
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/Login",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_login_index__WEBPACK_IMPORTED_MODULE_7__["default"], {}),
+        exact: true
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/Transaction",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_transaction_index__WEBPACK_IMPORTED_MODULE_8__["default"], {}),
+        exact: true
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/About",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_about_index__WEBPACK_IMPORTED_MODULE_6__["default"], {}),
+        exact: true
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/Register",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_register_index__WEBPACK_IMPORTED_MODULE_9__["default"], {}),
+        exact: true
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        path: "/Account",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_account_index__WEBPACK_IMPORTED_MODULE_10__["default"], {}),
+        exact: true
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_components_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
   });
 }
 
@@ -2352,388 +2348,6 @@ var header = function header() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);
-
-/***/ }),
-
-/***/ "./resources/js/pages/Home/components/carousel.js":
-/*!********************************************************!*\
-  !*** ./resources/js/pages/Home/components/carousel.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Carousel.js");
-/* harmony import */ var _image_cat_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../image/cat.jpg */ "./resources/js/pages/Home/image/cat.jpg");
-/* harmony import */ var _image_sea_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../image/sea.jpeg */ "./resources/js/pages/Home/image/sea.jpeg");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-
-
-
-var MyCarousel = function MyCarousel() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    fade: true,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-        className: " w-100 center",
-        src: _image_cat_jpg__WEBPACK_IMPORTED_MODULE_1__["default"],
-        alt: "First slide",
-        style: {
-          height: 300,
-          objectFit: 'cover'
-        }
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-        className: "d-flex w-100 center",
-        src: _image_sea_jpeg__WEBPACK_IMPORTED_MODULE_2__["default"],
-        alt: "Second slide",
-        style: {
-          height: 300
-        }
-      })
-    })]
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyCarousel);
-
-/***/ }),
-
-/***/ "./resources/js/pages/Home/components/rate.js":
-/*!****************************************************!*\
-  !*** ./resources/js/pages/Home/components/rate.js ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
-/* harmony import */ var _image_USD_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../image/USD.jpeg */ "./resources/js/pages/Home/image/USD.jpeg");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
- // import RateCard from './card';
-
-
-
-
-var color = {
-  backgroundColor: "rgba(255,255,255,0.4)",
-  margin: 0
-};
-var ImgSize = {
-  width: '20%'
-};
-var cardPadding = {
-  padding: '0 10px 25px' // margin: '-10px -10px -20px -10px',
-  // height:'100px',
-
-};
-
-var Rate = function Rate() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-    name: ["USD", "JPY", "CNY"],
-    //,"EUR","HKD","THB","GBP","KRW","AUD","NZD"
-    rate: [] //uSDTWD,jPYTWD,cNYTWD,eURTWD,hKDTWD,tHBTWD,gBPTWD,kRWTWD,aUDTWD,nZDTWD
-
-  }),
-      _useState2 = _slicedToArray(_useState, 2),
-      countries = _useState2[0],
-      setContries = _useState2[1];
-
-  var myHeaders = new Headers();
-  myHeaders.append("apikey", "J6gCGqeOPF5J7upqnnbAm22TyX53GrQX"); //kJ8tEGspAbAh4JOTl1ScgYfs2VAtyCL9
-  //cEGQtlsHVFmfZcilRcfZ9KAmCEhP8aaw
-  //J6gCGqeOPF5J7upqnnbAm22TyX53GrQX
-
-  var requestOptions = {
-    method: 'GET',
-    redirect: 'follow',
-    headers: myHeaders
-  };
-  fetch("https://api.apilayer.com/fixer/convert?to=TWD&from=USD&amount=1", requestOptions).then(function (response) {
-    return response.text();
-  }).then(function (data) {
-    console.log(data);
-    console.log(data.result); // setContries({...countries, countries: {
-    //     name: ["USD","JPY","CNY"],
-    //     rate: [data.result],
-    // }})
-    // console.log(countries)
-  })["catch"](function (error) {
-    return console.log('error', error);
-  });
-
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
-      _useState4 = _slicedToArray(_useState3, 2),
-      uSDTWD = _useState4[0],
-      setUSDTWD = _useState4[1];
-
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
-      _useState6 = _slicedToArray(_useState5, 2),
-      jPYTWD = _useState6[0],
-      setJPYTWD = _useState6[1]; // const [cNYTWD, setCNYTWD] = useState("");
-  // const [eURTWD, setEURTWD] = useState("");
-  // const [hKDTWD, setHKDTWD] = useState("");
-  // const [tHBTWD, setTHBTWD] = useState("");
-  // const [gBPTWD, setGBPTWD] = useState("");
-  // const [kRWTWD, setKRWTWD] = useState("");
-  // const [aUDTWD, setAUDTWD] = useState("");
-  // const [nZDTWD, setNZDTWD] = useState("");
-  // function getUSA(){
-  //     return axios.get('https://free.currconv.com/api/v7/convert?q=USD_TWD&compact=ultra&apiKey=3c59438ee0d0cdd2fc58');
-  //    }
-  // function getJPY(){
-  //     return axios.get('https://free.currconv.com/api/v7/convert?q=JPY_TWD&compact=ultra&apiKey=3c59438ee0d0cdd2fc58');
-  //    }
-  // function getCNY(){
-  //     return axios.get('https://free.currconv.com/api/v7/convert?q=CNY_TWD&compact=ultra&apiKey=c6b9fd7b28ff77cb1fe9');
-  //    }
-  // function getEUR(){
-  //     return axios.get('https://free.currconv.com/api/v7/convert?q=EUR_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
-  //    }
-  // function getHKD(){
-  //     return axios.get('https://free.currconv.com/api/v7/convert?q=HKD_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
-  //    }
-  // function getTHB(){
-  //     return axios.get('https://free.currconv.com/api/v7/convert?q=THB_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
-  //    }
-  // function getGBP(){
-  //     return axios.get('https://free.currconv.com/api/v7/convert?q=GBP_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
-  //    }
-  // function getKRW(){
-  //     return axios.get('https://free.currconv.com/api/v7/convert?q=KRW_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
-  //    }
-  // function getAUD(){
-  //     return axios.get('https://free.currconv.com/api/v7/convert?q=AUD_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
-  //    }
-  // function getNZD(){
-  //     return axios.get('https://free.currconv.com/api/v7/convert?q=NZD_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
-  //    }
-  // axios.all([getUSA(),getJPY()])//,getCNY(),getEUR(),getHKD(),getTHB(),getGBP(),getKRW(),getAUD(),getNZD()
-  //     .then(axios.spread(function(usa,jpy){//,cny,eur,hkd,thb,gbp,krw,aud,nzd
-  //當這兩個請求都完成的時候會觸發這個函數，兩個引數分別代表返回的結果
-  //  setUSDTWD(usa.data.USD_TWD);
-  //  setJPYTWD(jpy.data.JPY_TWD);
-  //  setCNYTWD(cny.data.CNY_TWD);
-  //  setContries(countries.rate);
-  //  setRates([usa.data.USD_TWD,jpy.data.JPY_TWD]);
-  //  console.log("rate = "+ rate);
-  //  setEURTWD(eur.data.EUR_TWD);
-  //  setHKDTWD(hkd.data.HKD_TWD);
-  //  setTHBTWD(thb.data.THB_TWD);
-  //  setGBPTWD(gbp.data.GBP_TWD);
-  //  setKRWTWD(krw.data.KRW_TWD);
-  //  setAUDTWD(aud.data.AUD_TWD);
-  //  setNZDTWD(nzd.data.NZD_TWD);
-  // }))
-  // useEffect(() => {
-  //     axios({
-  //         method: "GET",
-  //         url: [
-  //         "https://free.currconv.com/api/v7/convert?q=USD_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153",
-  //     ]})//c6b9fd7b28ff77cb1fe9
-  //         .then((res) => {
-  //             console.log(res.data);
-  //             // setUSDTWD(res.data.USD_TWD);
-  //             // one(res.data.HKD_TWD);
-  //             two(res.data.TWD_TWD);
-  //         })
-  //         .catch((err) => {
-  //             console.log(err);
-  //         })
-  // }, [])
-
-
-  return (
-    /*#__PURE__*/
-    //     <CardGroup>
-    // <Col xs={10} className="d-flex justify-content-center align-items-center" style={cardPadding}>
-    //     <Card style={{backgroundColor: 'rgba(255,255,255,0.4)',}} className="text-end w-100 border">
-    //         <Card.Body style={color}>
-    //             <Card.Text className="text-center" >
-    //                     <img src={Usd} style={ImgSize}></img>
-    //                     {/* <span style={{margin:'0 15px'}}>美元</span> */}
-    //                     <span style={{margin:'0 15px'}} className="text-bottom"> 1 CNY = {cNYTWD}TWD</span> 
-    //             </Card.Text>
-    //         </Card.Body>
-    //     </Card>         
-    // </Col>
-    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      xs: 10,
-      className: "d-flex justify-content-center align-items-center",
-      style: cardPadding,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        style: {
-          backgroundColor: 'rgba(255,255,255,0.4)'
-        },
-        className: "text-end w-100 border",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Body, {
-          style: color,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Text, {
-            className: "text-center",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-              src: _image_USD_jpeg__WEBPACK_IMPORTED_MODULE_2__["default"],
-              style: ImgSize
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("span", {
-              style: {
-                margin: '0 15px'
-              },
-              className: "text-bottom",
-              children: [" 1 JPY = ", jPYTWD, "TWD"]
-            })]
-          })
-        })
-      })
-    }) //     </CardGroup>
-    // <CardGroup className='justify-content-center'>
-    //     {
-    //         countries.name.map((item, index) => {
-    //             return <RateCard key={item} name={item} rate={countries.rate[index]}/>
-    //         })   
-    //     }
-    // </CardGroup>
-
-  );
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Rate);
-
-/***/ }),
-
-/***/ "./resources/js/pages/Home/index.js":
-/*!******************************************!*\
-  !*** ./resources/js/pages/Home/index.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _components_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/carousel */ "./resources/js/pages/Home/components/carousel.js");
-/* harmony import */ var _components_rate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/rate */ "./resources/js/pages/Home/components/rate.js");
-/* harmony import */ var _images_wave_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../images/wave.png */ "./public/images/wave.png");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-
-var carousel = {
-  padding: 0
-};
-var rate = {
-  backgroundImage: "url(".concat(_images_wave_png__WEBPACK_IMPORTED_MODULE_5__["default"], ")"),
-  backgroundSize: '110%',
-  backgroundPosition: "bottom",
-  backgroundRepeat: "no-repeat",
-  justifyContent: "center"
-};
-var text = {
-  textAlign: 'center',
-  margin: '30px 0'
-};
-
-var Home = function Home() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""),
-      _useState2 = _slicedToArray(_useState, 2),
-      test = _useState2[0],
-      setTest = _useState2[1]; // useEffect(() => {
-  //     axios({
-  //         method: "GET",
-  //         url: [
-  //         "/api/myuser",
-  //     ]})
-  //         .then((res) => {
-  //             console.log(res.data);
-  //             // console.log(res.data[0].name);
-  //             setTest(res.data[0].name);
-  //         })
-  //         .catch((err) => {
-  //             console.log(err);
-  //         })
-  // }, [])
-
-
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    className: "border ",
-    fluid: true,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
-      className: "border",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        style: carousel,
-        className: " justify-content-center align-items-center",
-        xs: 12,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_carousel__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
-      style: rate,
-      className: "border",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h3", {
-        style: text,
-        children: test
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_rate__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
-    })]
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
--0;
 
 /***/ }),
 
@@ -3328,6 +2942,390 @@ var Account = function Account() {
 
 /***/ }),
 
+/***/ "./resources/js/pages/home/components/carousel.js":
+/*!********************************************************!*\
+  !*** ./resources/js/pages/home/components/carousel.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Carousel.js");
+/* harmony import */ var _image_cat_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../image/cat.jpg */ "./resources/js/pages/home/image/cat.jpg");
+/* harmony import */ var _image_sea_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../image/sea.jpeg */ "./resources/js/pages/home/image/sea.jpeg");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var MyCarousel = function MyCarousel() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    fade: true,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+        className: "w-100 center",
+        src: _image_cat_jpg__WEBPACK_IMPORTED_MODULE_1__["default"],
+        alt: "First slide",
+        style: {
+          height: 300,
+          objectFit: 'cover'
+        }
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+        className: "w-100 center",
+        src: _image_cat_jpg__WEBPACK_IMPORTED_MODULE_1__["default"],
+        alt: "Second slide",
+        style: {
+          height: 300,
+          objectFit: 'cover',
+          transform: "rotateY(180deg)"
+        }
+      })
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyCarousel);
+
+/***/ }),
+
+/***/ "./resources/js/pages/home/components/rate.js":
+/*!****************************************************!*\
+  !*** ./resources/js/pages/home/components/rate.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var _image_USD_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../image/USD.jpeg */ "./resources/js/pages/home/image/USD.jpeg");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+ // import RateCard from './card';
+
+
+
+
+var color = {
+  backgroundColor: "rgba(255,255,255,0.4)",
+  margin: 0
+};
+var ImgSize = {
+  width: '20%'
+};
+var cardPadding = {
+  padding: '0 10px 25px' // margin: '-10px -10px -20px -10px',
+  // height:'100px',
+
+};
+
+var Rate = function Rate() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    name: ["USD", "JPY", "CNY"],
+    //,"EUR","HKD","THB","GBP","KRW","AUD","NZD"
+    rate: [] //uSDTWD,jPYTWD,cNYTWD,eURTWD,hKDTWD,tHBTWD,gBPTWD,kRWTWD,aUDTWD,nZDTWD
+
+  }),
+      _useState2 = _slicedToArray(_useState, 2),
+      countries = _useState2[0],
+      setContries = _useState2[1];
+
+  var myHeaders = new Headers();
+  myHeaders.append("apikey", "J6gCGqeOPF5J7upqnnbAm22TyX53GrQX"); //kJ8tEGspAbAh4JOTl1ScgYfs2VAtyCL9
+  //cEGQtlsHVFmfZcilRcfZ9KAmCEhP8aaw
+  //J6gCGqeOPF5J7upqnnbAm22TyX53GrQX
+
+  var requestOptions = {
+    method: 'GET',
+    redirect: 'follow',
+    headers: myHeaders
+  };
+  fetch("https://api.apilayer.com/fixer/convert?to=TWD&from=USD&amount=1", requestOptions).then(function (response) {
+    return response.text();
+  }).then(function (data) {
+    console.log(data);
+    console.log(data.result); // setContries({...countries, countries: {
+    //     name: ["USD","JPY","CNY"],
+    //     rate: [data.result],
+    // }})
+    // console.log(countries)
+  })["catch"](function (error) {
+    return console.log('error', error);
+  });
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+      _useState4 = _slicedToArray(_useState3, 2),
+      uSDTWD = _useState4[0],
+      setUSDTWD = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+      _useState6 = _slicedToArray(_useState5, 2),
+      jPYTWD = _useState6[0],
+      setJPYTWD = _useState6[1]; // const [cNYTWD, setCNYTWD] = useState("");
+  // const [eURTWD, setEURTWD] = useState("");
+  // const [hKDTWD, setHKDTWD] = useState("");
+  // const [tHBTWD, setTHBTWD] = useState("");
+  // const [gBPTWD, setGBPTWD] = useState("");
+  // const [kRWTWD, setKRWTWD] = useState("");
+  // const [aUDTWD, setAUDTWD] = useState("");
+  // const [nZDTWD, setNZDTWD] = useState("");
+  // function getUSA(){
+  //     return axios.get('https://free.currconv.com/api/v7/convert?q=USD_TWD&compact=ultra&apiKey=3c59438ee0d0cdd2fc58');
+  //    }
+  // function getJPY(){
+  //     return axios.get('https://free.currconv.com/api/v7/convert?q=JPY_TWD&compact=ultra&apiKey=3c59438ee0d0cdd2fc58');
+  //    }
+  // function getCNY(){
+  //     return axios.get('https://free.currconv.com/api/v7/convert?q=CNY_TWD&compact=ultra&apiKey=c6b9fd7b28ff77cb1fe9');
+  //    }
+  // function getEUR(){
+  //     return axios.get('https://free.currconv.com/api/v7/convert?q=EUR_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
+  //    }
+  // function getHKD(){
+  //     return axios.get('https://free.currconv.com/api/v7/convert?q=HKD_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
+  //    }
+  // function getTHB(){
+  //     return axios.get('https://free.currconv.com/api/v7/convert?q=THB_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
+  //    }
+  // function getGBP(){
+  //     return axios.get('https://free.currconv.com/api/v7/convert?q=GBP_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
+  //    }
+  // function getKRW(){
+  //     return axios.get('https://free.currconv.com/api/v7/convert?q=KRW_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
+  //    }
+  // function getAUD(){
+  //     return axios.get('https://free.currconv.com/api/v7/convert?q=AUD_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
+  //    }
+  // function getNZD(){
+  //     return axios.get('https://free.currconv.com/api/v7/convert?q=NZD_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153');
+  //    }
+  // axios.all([getUSA(),getJPY()])//,getCNY(),getEUR(),getHKD(),getTHB(),getGBP(),getKRW(),getAUD(),getNZD()
+  //     .then(axios.spread(function(usa,jpy){//,cny,eur,hkd,thb,gbp,krw,aud,nzd
+  //當這兩個請求都完成的時候會觸發這個函數，兩個引數分別代表返回的結果
+  //  setUSDTWD(usa.data.USD_TWD);
+  //  setJPYTWD(jpy.data.JPY_TWD);
+  //  setCNYTWD(cny.data.CNY_TWD);
+  //  setContries(countries.rate);
+  //  setRates([usa.data.USD_TWD,jpy.data.JPY_TWD]);
+  //  console.log("rate = "+ rate);
+  //  setEURTWD(eur.data.EUR_TWD);
+  //  setHKDTWD(hkd.data.HKD_TWD);
+  //  setTHBTWD(thb.data.THB_TWD);
+  //  setGBPTWD(gbp.data.GBP_TWD);
+  //  setKRWTWD(krw.data.KRW_TWD);
+  //  setAUDTWD(aud.data.AUD_TWD);
+  //  setNZDTWD(nzd.data.NZD_TWD);
+  // }))
+  // useEffect(() => {
+  //     axios({
+  //         method: "GET",
+  //         url: [
+  //         "https://free.currconv.com/api/v7/convert?q=USD_TWD&compact=ultra&apiKey=6c4e1f56bc8d2c9ea153",
+  //     ]})//c6b9fd7b28ff77cb1fe9
+  //         .then((res) => {
+  //             console.log(res.data);
+  //             // setUSDTWD(res.data.USD_TWD);
+  //             // one(res.data.HKD_TWD);
+  //             two(res.data.TWD_TWD);
+  //         })
+  //         .catch((err) => {
+  //             console.log(err);
+  //         })
+  // }, [])
+
+
+  return (
+    /*#__PURE__*/
+    //     <CardGroup>
+    // <Col xs={10} className="d-flex justify-content-center align-items-center" style={cardPadding}>
+    //     <Card style={{backgroundColor: 'rgba(255,255,255,0.4)',}} className="text-end w-100 border">
+    //         <Card.Body style={color}>
+    //             <Card.Text className="text-center" >
+    //                     <img src={Usd} style={ImgSize}></img>
+    //                     {/* <span style={{margin:'0 15px'}}>美元</span> */}
+    //                     <span style={{margin:'0 15px'}} className="text-bottom"> 1 CNY = {cNYTWD}TWD</span> 
+    //             </Card.Text>
+    //         </Card.Body>
+    //     </Card>         
+    // </Col>
+    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      xs: 10,
+      className: "d-flex justify-content-center align-items-center",
+      style: cardPadding,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        style: {
+          backgroundColor: 'rgba(255,255,255,0.4)'
+        },
+        className: "text-end w-100 border",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Body, {
+          style: color,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Text, {
+            className: "text-center",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+              src: _image_USD_jpeg__WEBPACK_IMPORTED_MODULE_2__["default"],
+              style: ImgSize
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("span", {
+              style: {
+                margin: '0 15px'
+              },
+              className: "text-bottom",
+              children: [" 1 JPY = ", jPYTWD, "TWD"]
+            })]
+          })
+        })
+      })
+    }) //     </CardGroup>
+    // <CardGroup className='justify-content-center'>
+    //     {
+    //         countries.name.map((item, index) => {
+    //             return <RateCard key={item} name={item} rate={countries.rate[index]}/>
+    //         })   
+    //     }
+    // </CardGroup>
+
+  );
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Rate);
+
+/***/ }),
+
+/***/ "./resources/js/pages/home/index.js":
+/*!******************************************!*\
+  !*** ./resources/js/pages/home/index.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/carousel */ "./resources/js/pages/home/components/carousel.js");
+/* harmony import */ var _components_rate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/rate */ "./resources/js/pages/home/components/rate.js");
+/* harmony import */ var _images_wave_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../images/wave.png */ "./public/images/wave.png");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+var carousel = {
+  padding: 0
+};
+var rate = {
+  backgroundImage: "url(".concat(_images_wave_png__WEBPACK_IMPORTED_MODULE_5__["default"], ")"),
+  backgroundSize: '110%',
+  backgroundPosition: "bottom",
+  backgroundRepeat: "no-repeat",
+  justifyContent: "center"
+};
+var text = {
+  textAlign: 'center',
+  margin: '30px 0'
+};
+
+var Home = function Home() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""),
+      _useState2 = _slicedToArray(_useState, 2),
+      test = _useState2[0],
+      setTest = _useState2[1]; // useEffect(() => {
+  //     axios({
+  //         method: "GET",
+  //         url: [
+  //         "/api/myuser",
+  //     ]})
+  //         .then((res) => {
+  //             console.log(res.data);
+  //             // console.log(res.data[0].name);
+  //             setTest(res.data[0].name);
+  //         })
+  //         .catch((err) => {
+  //             console.log(err);
+  //         })
+  // }, [])
+
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "border ",
+    fluid: true,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      className: "border",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        style: carousel,
+        className: " justify-content-center align-items-center",
+        xs: 12,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_carousel__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      style: rate,
+      className: "border",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h3", {
+        style: text,
+        children: "\u5373\u6642\u532F\u7387"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_rate__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_rate__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_rate__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
+-0;
+
+/***/ }),
+
 /***/ "./resources/js/pages/login/index.js":
 /*!*******************************************!*\
   !*** ./resources/js/pages/login/index.js ***!
@@ -3344,8 +3342,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Form.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var _image_bg_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./image/bg.png */ "./resources/js/pages/login/image/bg.png");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
@@ -3400,19 +3398,61 @@ var btn = {
 var Login = function Login() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(""),
       _useState2 = _slicedToArray(_useState, 2),
-      test = _useState2[0],
-      setTest = _useState2[1];
+      account = _useState2[0],
+      setAccount = _useState2[1];
 
-  (0,react__WEBPACK_IMPORTED_MODULE_3__.useEffect)(function () {
-    axios__WEBPACK_IMPORTED_MODULE_2___default()({
-      method: "GET",
-      url: ["/api/myuser"]
-    }).then(function (res) {
-      console.log(res.data); // setTest(res.data[0].name);
-    })["catch"](function (err) {
-      console.log(err);
-    });
-  }, []);
+  function accountChange(e) {
+    setAccount(e.target.value);
+  }
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(""),
+      _useState4 = _slicedToArray(_useState3, 2),
+      password = _useState4[0],
+      setPassword = _useState4[1];
+
+  function passwordChange(e) {
+    setPassword(e.target.value);
+  }
+
+  function logIn() {
+    axios__WEBPACK_IMPORTED_MODULE_2___default().get("/api/myuser/logIn", {
+      account: account,
+      password: password
+    }).then(function (response) {
+      console.log(response.config); // localStorage.setItem("users",response.data);
+      // history.push("/Home");
+    }); // axios({
+    //     method: "POST",
+    //     url: "/api/myuser",
+    //     data: {
+    //         name: account,
+    //         email: password
+    //     }
+    // })
+    //     .then((res) => {
+    //         console.log(res);
+    //         console.log(res.config.data);
+    //     })
+    //     .catch((err) => {
+    //         console.log(err);
+    //     })
+  } // const [test, setTest] = useState("");
+  // useEffect(() => {
+  //     axios({
+  //         method: "GET",
+  //         url: [
+  //         "/api/myuser",
+  //     ]})
+  //         .then((res) => {
+  //             console.log(res.data);
+  //             // setTest(res.data[0].name);
+  //         })
+  //         .catch((err) => {
+  //             console.log(err);
+  //         })
+  // }, [])
+
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
     style: app,
     className: "d-flex justify-content-center align-items-top",
@@ -3425,39 +3465,40 @@ var Login = function Login() {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
           className: "w-90",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+            onChange: accountChange,
             style: margin,
             controlId: "loginAccountName",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
               children: "\u5E33\u865F"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+              name: "email",
               type: "text",
               placeholder: "Account Name"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
+            onChange: passwordChange,
             style: margin,
             controlId: "loginPassword",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
               children: "\u5BC6\u78BC"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
+              name: "password",
               type: "password",
               placeholder: "Password"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Group, {
             style: margin,
             controlId: "loginAccount",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, {
-              style: label,
-              to: "/Account",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["default"], {
-                style: btn,
-                variant: "outline-secondary",
-                type: "submit",
-                children: "\u767B\u5165"
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              onClick: logIn,
+              style: btn,
+              variant: "outline-secondary",
+              type: "submit",
+              children: "\u767B\u5165"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
               style: label,
               to: "/Register",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_10__["default"], {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], {
                 style: btn,
                 variant: "outline-secondary",
                 children: "\u8A3B\u518A"
@@ -3673,7 +3714,7 @@ var Transaction = function Transaction() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: "d-flex justify-content-around w-100",
     style: {
-      height: 700
+      height: 600
     },
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], {
       style: padding,
@@ -4466,9 +4507,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/pages/Home/image/USD.jpeg":
+/***/ "./resources/js/pages/home/image/USD.jpeg":
 /*!************************************************!*\
-  !*** ./resources/js/pages/Home/image/USD.jpeg ***!
+  !*** ./resources/js/pages/home/image/USD.jpeg ***!
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -4481,9 +4522,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/pages/Home/image/cat.jpg":
+/***/ "./resources/js/pages/home/image/cat.jpg":
 /*!***********************************************!*\
-  !*** ./resources/js/pages/Home/image/cat.jpg ***!
+  !*** ./resources/js/pages/home/image/cat.jpg ***!
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -4496,9 +4537,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/pages/Home/image/sea.jpeg":
+/***/ "./resources/js/pages/home/image/sea.jpeg":
 /*!************************************************!*\
-  !*** ./resources/js/pages/Home/image/sea.jpeg ***!
+  !*** ./resources/js/pages/home/image/sea.jpeg ***!
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 

@@ -36,22 +36,58 @@ const btn = {
 }
 
 const Login = () => {
-    const [test, setTest] = useState("");
 
-    useEffect(() => {
-        axios({
-            method: "GET",
-            url: [
-            "/api/myuser",
-        ]})
-            .then((res) => {
-                console.log(res.data);
-                // setTest(res.data[0].name);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
-    }, [])
+    const [account, setAccount] = useState("")
+    function accountChange(e) {
+        setAccount(e.target.value)
+    }
+
+    const [password, setPassword] = useState("")
+    function passwordChange(e) {
+        setPassword(e.target.value)
+    }
+
+    function logIn() {
+        axios.get("/api/myuser/logIn", {account,password})
+        .then(response => {
+            console.log(response.config);
+            // localStorage.setItem("users",response.data);
+            // history.push("/Home");
+         });
+
+        // axios({
+        //     method: "POST",
+        //     url: "/api/myuser",
+        //     data: {
+        //         name: account,
+        //         email: password
+        //     }
+        // })
+        //     .then((res) => {
+        //         console.log(res);
+        //         console.log(res.config.data);
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //     })
+
+    }
+
+    // const [test, setTest] = useState("");
+    // useEffect(() => {
+    //     axios({
+    //         method: "GET",
+    //         url: [
+    //         "/api/myuser",
+    //     ]})
+    //         .then((res) => {
+    //             console.log(res.data);
+    //             // setTest(res.data[0].name);
+    //         })
+    //         .catch((err) => {
+    //             console.log(err);
+    //         })
+    // }, [])
   
     return(
         <Container style={app} className="d-flex justify-content-center align-items-top">
@@ -59,20 +95,20 @@ const Login = () => {
                 <Col xs={12}>
                     <h1 style={title}>Login</h1>
                     <Form className="w-90">
-                        <Form.Group style={margin} controlId="loginAccountName">
+                        <Form.Group onChange={accountChange} style={margin} controlId="loginAccountName">
                             <Form.Label>帳號</Form.Label>
-                            <Form.Control type="text" placeholder="Account Name" />
+                            <Form.Control name="email" type="text" placeholder="Account Name" />
                         </Form.Group>
-                        <Form.Group style={margin} controlId="loginPassword">
+                        <Form.Group onChange={passwordChange} style={margin} controlId="loginPassword">
                             <Form.Label>密碼</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
+                            <Form.Control name="password" type="password" placeholder="Password" />
                         </Form.Group>
                         <Form.Group style={margin} controlId="loginAccount">
-                            <Link style={label} to="/Account">
-                                <Button style={btn} variant="outline-secondary" type="submit">
+                            {/* <Link style={label} to="/Account"> */}
+                                <Button onClick={logIn} style={btn} variant="outline-secondary" type="submit">
                                     登入
                                 </Button>
-                            </Link>
+                            {/* </Link> */}
                             <Link style={label} to="/Register">
                                 <Button style={btn} variant="outline-secondary">
                                     註冊

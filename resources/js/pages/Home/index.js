@@ -24,7 +24,6 @@ const text ={
 
 const Home = () => {
     const [test, setTest] = useState("");
-
     // useEffect(() => {
     //     axios({
     //         method: "GET",
@@ -49,7 +48,9 @@ const Home = () => {
                 </Col>
             </Row>
             <Row style={rate} className="border">
-                <h3 style={text}>{test}</h3>
+                <h3 style={text}>即時匯率</h3>
+                <Rate />
+                <Rate />
                 <Rate />
             </Row>
         </Container>  

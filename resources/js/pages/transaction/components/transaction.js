@@ -22,7 +22,7 @@ const inputstyle = {
 
 const Transaction = () => {
     return(
-        <Container className="d-flex justify-content-around w-100" style={{height:700}}>
+        <Container className="d-flex justify-content-around w-100" style={{height:600}}>
             <Row style={padding} className='justify-content-center align-items-center'>
                 <Col md={12}>
                     <Form>

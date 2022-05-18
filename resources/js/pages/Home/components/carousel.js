@@ -8,7 +8,7 @@ const MyCarousel = () => {
     <Carousel fade>
         <Carousel.Item>
             <img
-            className=" w-100 center"
+            className="w-100 center"
             src={Cat}
             alt="First slide"
             style={{height:300,objectFit:'cover'}}
@@ -16,10 +16,10 @@ const MyCarousel = () => {
         </Carousel.Item>
         <Carousel.Item>
             <img
-            className="d-flex w-100 center"
-            src={Sea}
+            className="w-100 center"
+            src={Cat}
             alt="Second slide"
-            style={{height:300}}
+            style={{height:300,objectFit:'cover',transform:"rotateY(180deg)"}}
             />
         </Carousel.Item>
     </Carousel>

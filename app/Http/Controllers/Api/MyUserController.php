@@ -8,11 +8,27 @@ use Illuminate\Http\Request;
 
 class MyUserController extends Controller
 {
+    public function logIn(Request $request)
+    {
+        $email =  $req->get('email');
+        $password = $req->get('password');
 
-    // function register()
-    // {
+        $data = MyUser::all();
+        return $request->get('email');
 
-    // }
+        // $user = DB::table('my_users')->where('email', $email)->first();
+        // if(!Hash::check($password, $user->password))
+        // {
+        //     echo "Not Matched";
+        // }
+        // else
+        // {
+        //     //$user = DB::table('users')->where('email',$email)->first();
+        //    echo $user->email;
+        // }
+        // return $email;
+    }
+
 
     /**
      * Display a listing of the resource.
@@ -52,7 +68,7 @@ class MyUserController extends Controller
         $myuser->save();
 
         return $myuser;
-        
+
         // $name =  $request->input("name");
         // $email =  $request->input("email");
 
@@ -60,6 +76,7 @@ class MyUserController extends Controller
         //     "name" => $name,
         //     "email" => $email,
         // ]);
+
         // MyUser::create([
         //     "name" => $name,
         //     "email" => $email,
