@@ -46,7 +46,7 @@ const Login = () => {
         ]})
             .then((res) => {
                 console.log(res.data);
-                setTest(res.data[0].name);
+                // setTest(res.data[0].name);
             })
             .catch((err) => {
                 console.log(err);

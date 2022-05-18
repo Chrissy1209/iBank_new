@@ -19,3 +19,10 @@ Route::get('/', function () {
 
     return view('welcome');
 });
+
+// Route::post('/api/myuser', function () {
+//     // $data = DB::table("my_users")->get();
+//     // return $data;
+
+//     return view('welcome');
+// });
