@@ -13,12 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('my_users', function (Blueprint $table) {
-            // $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('email');
-            // $table->string('password');
-            $table->string('money');
+        Schema::create('transaction_history', function (Blueprint $table) {
+            // $table->id();
+            $table->string('payer');
+            $table->string('payee');
+            $table->string('transaction_amount');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('my_users');
+        Schema::dropIfExists('transaction_history');
     }
 };

@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Form,Row,Col,Button } from 'react-bootstrap';
-
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 const padding = {
     padding: "0 0 75px 0",
 }
@@ -21,6 +22,29 @@ const inputstyle = {
 }
 
 const Transaction = () => {
+
+    const [account, setAccount] = useState("")
+    function accountChange(e) {
+        setAccount(e.target.value)
+    }
+
+    // const [email, setEmail] = useState("")
+    // function emailChange(e) {
+    //     setEmail(e.target.value)
+    // }
+    axios({
+        method: "GET",
+        url: "/api/myuser",
+    })
+    .then((res) => {
+        console.log(res);
+        console.log(res.data[0].name);
+        setAccount(res.data[0].name);
+
+    })
+    .catch((err) => {
+        console.log(err);
+    })
     return(
         <Container className="d-flex justify-content-around w-100" style={{height:600}}>
             <Row style={padding} className='justify-content-center align-items-center'>
@@ -29,7 +53,7 @@ const Transaction = () => {
                         <Form.Group style={formstyle} className="mb-3 " controlId="transactionEmail" >
                             <Form.Label style={labelstyle}>轉出帳號</Form.Label>
                             <small style={{padding: "8px 12px"}}>
-                                1234567890
+                                {account}
                             </small>
                             {/* <Form.Control style={inputstyle} type="text" readOnly>
                                 1234567890
@@ -45,9 +69,9 @@ const Transaction = () => {
                             ---------------------  轉給  ---------------------
                             </Form.Text>
                         </Form.Group>
-                        <Form.Group style={formstyle} className="mb-3" controlId="transactionEmail" >
+                        <Form.Group style={formstyle} className="mb-3" controlId="transaction" >
                             <Form.Label style={labelstyle}>轉入帳號</Form.Label>
-                            <Form.Control style={inputstyle} type="email" placeholder="銀行代碼/帳號" />
+                            <Form.Control style={inputstyle} type="text" placeholder="銀行代碼/帳號" />
                         </Form.Group>
                         <Form.Group style={formstyle} className="mb-3" controlId="transactionAmount">
                             <Form.Label style={labelstyle}>轉入金額</Form.Label>
