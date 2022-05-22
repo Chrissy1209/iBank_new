@@ -48,29 +48,27 @@ const Login = () => {
     }
 
     function logIn() {
-        axios.get("/api/myuser/logIn", {account,password})
-        .then(response => {
-            console.log(response.config);
-            // localStorage.setItem("users",response.data);
-            // history.push("/Home");
-         });
-
         // axios({
-        //     method: "POST",
-        //     url: "/api/myuser",
+        //     method: "GET",
+        //     url: "/api/myuser/logIn",
         //     data: {
         //         name: account,
         //         email: password
         //     }
-        // })
-        //     .then((res) => {
+        // }).then((res) => {
         //         console.log(res);
-        //         console.log(res.config.data);
-        //     })
-        //     .catch((err) => {
+        //         // console.log(res.data);
+        //         // console.log(res.config.data);
+        // }).catch((err) => {
         //         console.log(err);
-        //     })
+        // })
 
+        axios.get("/api/myuser/logIn", {account,password})
+        .then(res => {
+            console.log(res);
+            // localStorage.setItem("users",response.data);
+            // history.push("/Home");
+         });
     }
 
     // const [test, setTest] = useState("");
@@ -97,11 +95,11 @@ const Login = () => {
                     <Form className="w-90">
                         <Form.Group onChange={accountChange} style={margin} controlId="loginAccountName">
                             <Form.Label>帳號</Form.Label>
-                            <Form.Control name="email" type="text" placeholder="Account Name" />
+                            <Form.Control name="name" type="text" placeholder="Account Name" />
                         </Form.Group>
                         <Form.Group onChange={passwordChange} style={margin} controlId="loginPassword">
                             <Form.Label>密碼</Form.Label>
-                            <Form.Control name="password" type="password" placeholder="Password" />
+                            <Form.Control name="email" type="password" placeholder="Password" />
                         </Form.Group>
                         <Form.Group style={margin} controlId="loginAccount">
                             {/* <Link style={label} to="/Account"> */}

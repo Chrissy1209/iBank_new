@@ -5,18 +5,58 @@ namespace App\Http\Controllers\Api;
 use App\Models\MyUser;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Hash;
+
 
 class MyUserController extends Controller
 {
     public function logIn(Request $request)
     {
-        $email =  $req->get('email');
-        $password = $req->get('password');
+        // $input = Input::all();
 
-        $data = MyUser::all();
-        return $request->get('email');
+        // $rules = ['email' => 'required|email',
+        //           'password' => 'required'
+        // ];
+    
+        // $validator = Validator::make($input, $rules);
+    
+        // if ($validator->passes()) {
+        //     $attempt = Auth::attempt([
+        //         'email' => $input['email'],
+        //         'password' => $input['password']
+        //     ]);
+    
+        //     if ($attempt) {
+        //         return Redirect::intended('post');
+        //     }
+    
+        //     return Redirect::to('login')
+        //             ->withErrors(['fail'=>'Email or password is wrong!']);
+        // }
+    
+        // //fails
+        // return Redirect::to('login')
+        //             ->withErrors($validator)
+        //             ->withInput(Input::except('password'));
+//----             
+        // $email =  $request->get('name');
+        // $password = $request->get('email');
 
-        // $user = DB::table('my_users')->where('email', $email)->first();
+        // $user = DB::table('my_users')->where('name', $email)->first();
+        // if($user === null){
+        //     // $this->error("查無此帳號名稱");
+        //     return 1;
+        // } else {
+        //     return 2;
+        // }
+        // return 3;
+//----
+        // $email =  $request->get('name');
+        // $password = $request->get('email');
+
+        // $user = DB::table('my_users')->where('name', $email)->first();
         // if(!Hash::check($password, $user->password))
         // {
         //     echo "Not Matched";
@@ -49,7 +89,7 @@ class MyUserController extends Controller
      */
     public function create()
     {
-        //
+        return "create";
     }
 
     /**
@@ -63,35 +103,56 @@ class MyUserController extends Controller
         $myuser = new MyUser();
 
         $myuser->name =  $request->get("name");
+        $myuser->password = Hash::make($request->get("password"));
         $myuser->email =  $request->get("email");
+        $myuser->phone =  $request->get("phone");
+        $myuser->balance = 0;
+
+        $user = DB::table('my_users')->where('name', $myuser->name)->first();
+        if($user !== null){
+            // $this->error("帳號重複註冊");
+            return "帳號重複註冊";
+        }
 
         $myuser->save();
-
-        return $myuser;
-
-        // $name =  $request->input("name");
-        // $email =  $request->input("email");
-
-        // DB::table("my_users")->insert([
-        //     "name" => $name,
-        //     "email" => $email,
-        // ]);
-
-        // MyUser::create([
-        //     "name" => $name,
-        //     "email" => $email,
-        // ]);
+        // return Redirect::to('/'); redirect('/home/dashboard'); redirect()->route('login');
+        return "success";
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $id //old!!
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($request)
     {
-        //
+        $myuser = new MyUser();
+
+        $myuser->name = request('name');
+        $myuser->email = request('email');
+
+        $user = DB::table('my_users')->where('name', $myuser->name)->first();
+        // if(!Hash::check($myuser->email, $user->email))
+        // {
+        //     echo "Not Matched";
+        // }
+        // else
+        // {
+            //$user = DB::table('users')->where('email',$email)->first();
+           return 1;
+        // }
+        // return $name;
+
+//---
+        // if($user === null){
+        //     // $this->error("查無此帳號名稱");
+        //     return 1;
+        // } else {
+        //     return 2; //有此帳號名
+        // }
+        // return 3;
     }
 
     /**
@@ -102,7 +163,6 @@ class MyUserController extends Controller
      */
     public function edit($id)
     {
-        //
     }
 
     /**
@@ -114,7 +174,6 @@ class MyUserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
     }
 
     /**
@@ -125,6 +184,5 @@ class MyUserController extends Controller
      */
     public function destroy($id)
     {
-        //
     }
 }

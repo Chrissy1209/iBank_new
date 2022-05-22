@@ -3415,27 +3415,27 @@ var Login = function Login() {
   }
 
   function logIn() {
-    axios__WEBPACK_IMPORTED_MODULE_2___default().get("/api/myuser/logIn", {
-      account: account,
-      password: password
-    }).then(function (response) {
-      console.log(response.config); // localStorage.setItem("users",response.data);
-      // history.push("/Home");
-    }); // axios({
-    //     method: "POST",
-    //     url: "/api/myuser",
+    // axios({
+    //     method: "GET",
+    //     url: "/api/myuser/logIn",
     //     data: {
     //         name: account,
     //         email: password
     //     }
-    // })
-    //     .then((res) => {
+    // }).then((res) => {
     //         console.log(res);
-    //         console.log(res.config.data);
-    //     })
-    //     .catch((err) => {
+    //         // console.log(res.data);
+    //         // console.log(res.config.data);
+    // }).catch((err) => {
     //         console.log(err);
-    //     })
+    // })
+    axios__WEBPACK_IMPORTED_MODULE_2___default().get("/api/myuser/logIn", {
+      account: account,
+      password: password
+    }).then(function (res) {
+      console.log(res); // localStorage.setItem("users",response.data);
+      // history.push("/Home");
+    });
   } // const [test, setTest] = useState("");
   // useEffect(() => {
   //     axios({
@@ -3471,7 +3471,7 @@ var Login = function Login() {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
               children: "\u5E33\u865F"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
-              name: "email",
+              name: "name",
               type: "text",
               placeholder: "Account Name"
             })]
@@ -3482,7 +3482,7 @@ var Login = function Login() {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Label, {
               children: "\u5BC6\u78BC"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"].Control, {
-              name: "password",
+              name: "email",
               type: "password",
               placeholder: "Password"
             })]
@@ -3560,6 +3560,11 @@ var Size = {
 var margin = {
   margin: "10px 0"
 };
+var errMesStyle = {
+  color: "red",
+  marginLeft: "43px",
+  fontSize: "12px"
+};
 
 var Register = function Register() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""),
@@ -3571,14 +3576,76 @@ var Register = function Register() {
     setAccount(e.target.value);
   }
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),
       _useState4 = _slicedToArray(_useState3, 2),
-      email = _useState4[0],
-      setEmail = _useState4[1];
+      check = _useState4[0],
+      setCheck = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""),
+      _useState6 = _slicedToArray(_useState5, 2),
+      password = _useState6[0],
+      setPassword = _useState6[1];
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""),
+      _useState8 = _slicedToArray(_useState7, 2),
+      errMes = _useState8[0],
+      setErrMes = _useState8[1];
+
+  function passwordChange(e) {
+    setPassword(e.target.value);
+    console.log("one = " + password);
+    if (e.target.value.length <= 6) setErrMes("請設定長度大於6的密碼");else setErrMes("");
+
+    if (check) {
+      if (checkPassword != password) setErrMes2("請數入相同的密碼");else {
+        setErrMes2("");
+        setCheck(!check);
+      }
+    }
+  }
+
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""),
+      _useState10 = _slicedToArray(_useState9, 2),
+      checkPassword = _useState10[0],
+      setCheckPassword = _useState10[1];
+
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""),
+      _useState12 = _slicedToArray(_useState11, 2),
+      errMes2 = _useState12[0],
+      setErrMes2 = _useState12[1];
+
+  function checkPasswordChange(e) {
+    setCheckPassword(e.target.value);
+    console.log("two = " + checkPassword);
+    console.log("one = " + password);
+    if (checkPassword != password) setErrMes2("請數入相同的密碼");else {
+      setErrMes2("");
+      setCheck(true);
+    }
+  }
+
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""),
+      _useState14 = _slicedToArray(_useState13, 2),
+      email = _useState14[0],
+      setEmail = _useState14[1];
 
   function emailChange(e) {
     setEmail(e.target.value);
   }
+
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(""),
+      _useState16 = _slicedToArray(_useState15, 2),
+      phone = _useState16[0],
+      setPhone = _useState16[1];
+
+  function phoneChange(e) {
+    setPhone(e.target.value);
+  }
+
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(0),
+      _useState18 = _slicedToArray(_useState17, 2),
+      returnMes = _useState18[0],
+      setReturnMes = _useState18[1];
 
   function signIn() {
     axios__WEBPACK_IMPORTED_MODULE_1___default()({
@@ -3586,10 +3653,16 @@ var Register = function Register() {
       url: "/api/myuser",
       data: {
         name: account,
-        email: email
+        password: password,
+        email: email,
+        phone: phone
       }
     }).then(function (res) {
       console.log(res);
+      console.log(res.data);
+      setReturnMes(res.data); //不能set
+
+      console.log(returnMes);
       console.log(res.config.data);
     })["catch"](function (err) {
       console.log(err);
@@ -3615,25 +3688,39 @@ var Register = function Register() {
               md: 8,
               name: "name",
               type: "text",
-              placeholder: "Account Name"
+              placeholder: "\u8ACB\u8F38\u5165\u5168\u540D",
+              required: true
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
             style: margin,
             controlId: "registerPassword",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
               children: "\u5BC6\u78BC"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
+              style: errMesStyle,
+              children: errMes
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
+              value: password,
+              onChange: passwordChange,
+              name: "password",
               type: "password",
-              placeholder: "Password"
+              placeholder: "\u8ACB\u8A2D\u5B9A\u9577\u5EA6\u5927\u65BC6\u7684\u5BC6\u78BC",
+              required: true
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
             style: margin,
             controlId: "registerCheckPassword",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
               children: "\u78BA\u8A8D\u5BC6\u78BC"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
+              style: errMesStyle,
+              children: errMes2
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
+              value: checkPassword,
+              onChange: checkPasswordChange,
               type: "password",
-              placeholder: "Password"
+              placeholder: "\u78BA\u8A8D\u5BC6\u78BC",
+              required: true
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
             style: margin,
@@ -3641,10 +3728,12 @@ var Register = function Register() {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
               children: "\u4FE1\u7BB1"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
-              name: "email",
+              value: email,
               onChange: emailChange,
+              name: "email",
               type: "email",
-              placeholder: "Email"
+              required: true,
+              pattern: "^(([0-9a-zA-Z]+)|([0-9a-zA-Z]+[_.0-9a-zA-Z-]*[0-9a-zA-Z]+))@([a-zA-Z0-9-]+[.])+([a-zA-Z]{2}|net|NET|com|COM|gov|GOV|mil|MIL|org|ORG|edu|EDU|int|INT)$"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Group, {
             style: margin,
@@ -3652,8 +3741,11 @@ var Register = function Register() {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Label, {
               children: "\u96FB\u8A71\u865F\u78BC"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Control, {
+              value: phone,
+              onChange: phoneChange,
+              name: "phone",
               type: "text",
-              placeholder: "Phone Number"
+              required: true
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
             onClick: signIn,
