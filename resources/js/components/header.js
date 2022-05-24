@@ -12,7 +12,11 @@ const label = {
     textDecoration:'none'
 }
 
-const header=()=>{
+const header=({ setPage })=>{
+    function pageChange() {
+        setPage("login");
+    }
+
     return(
         <Container className="border" fluid style={app}>
             <Row className="justify-content-center" style={app}>
@@ -23,7 +27,7 @@ const header=()=>{
                     <Link to="/About" style={label}>About</Link>
                 </Col>
                 <Col className="align-items-center d-flex" xs={3}>
-                    <Link to="/Login" style={label}>Log-in</Link>
+                    <Link onClick={pageChange} to="/Login" style={label}>Log-in</Link>
                 </Col>
                 
                 {/* <Col className="align-items-center d-flex" xs={2}>

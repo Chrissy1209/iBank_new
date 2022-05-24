@@ -23,31 +23,6 @@ const btn = {
     padding: "0.375rem 0.75rem",
 }
 
-// function changeColor(page){
-//     console.log(page);
-//     var account = document.getElementById("Account");
-//     var member = document.getElementById("Member");
-//     var history = document.getElementById("History");
-
-//     if(page == 'Account'){
-//         account.classList.add("click");
-//         // account.className = ;
-//         // account.style.backgroundColor="grey";
-//         // member.style.backgroundColor="white";
-//         // history.style.backgroundColor="white";
-//     }
-//     else if(page == 'Member'){
-//         account.style.backgroundColor="white";
-//         member.style.backgroundColor="grey";
-//         history.style.backgroundColor="white";
-//     }
-//     else if(page == 'History'){
-//         account.style.backgroundColor="white";
-//         member.style.backgroundColor="white";
-//         history.style.backgroundColor="grey";
-//     }
-// }
-
 const Account = () => {
     const [page, setPage] = useState("AccountDetail");
 
