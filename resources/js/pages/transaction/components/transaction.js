@@ -23,7 +23,11 @@ const inputstyle = {
     border: 'none',
 }
 
-const Transaction = () => {
+const Transaction = ({ setPage }) => {
+
+    function pageChange() {
+        setPage("Message");
+    }
 
     const [account, setAccount] = useState("")
     function accountChange(e) {
@@ -34,6 +38,7 @@ const Transaction = () => {
     // function emailChange(e) {
     //     setEmail(e.target.value)
     // }
+
     axios({
         method: "GET",
         url: "/api/myuser",
@@ -47,6 +52,7 @@ const Transaction = () => {
     .catch((err) => {
         console.log(err);
     })
+
     return(
         <Container className="d-flex justify-content-around w-100" style={{height:600}}>
             <Row style={padding} className='justify-content-center align-items-center'>
@@ -83,15 +89,7 @@ const Transaction = () => {
                             <Form.Label style={{margin:"6px 42px 6px 10px"}}>註記</Form.Label>
                             <Form.Control style={inputstyle} type="text" placeholder="顯示於交易明細限7字" />
                         </Form.Group>
-                        {/* <Form.Group className="mb-3" controlId="transactionPassword">
-                            <Form.Label>帳戶密碼</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
-                        </Form.Group>
-                        <br></br>
-                        <Form.Group className="mb-3" controlId="transactionCheckbox">
-                            <Form.Check type="checkbox" label="Check me out" />
-                        </Form.Group> */}
-                        <Button style={{margin: "10px 10px 10px 0"}} variant="outline-secondary" type="submit">
+                        <Button onClick={pageChange} style={{margin: "10px 10px 10px 0"}} variant="outline-secondary" type="submit">
                             立即轉帳
                         </Button>
                     </Form>
