@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Form,Col,Button} from 'react-bootstrap';
+
+import { Form,Col,Button } from 'react-bootstrap';
 
 const Member = () => {
     return(

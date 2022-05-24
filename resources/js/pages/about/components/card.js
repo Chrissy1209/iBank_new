@@ -1,22 +1,26 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Card,Col } from 'react-bootstrap';
-import { useState } from 'react';
 
 var wall = {
     border: "1px solid #9E9E9E",
     // boxShadow: "3px 3px 7px #9E9E9E",
     margin:"0 10px"
 }
+
 const cardBodyHeight = {
     // height: "280px"
 }
+
 const cardPadding = {
     padding: '10px 10px 20px 10px',
 }
+
 const textMargin = {
     marginTop: "15px",
     marginBottom: "4px",
 }
+
 const label = {
     // color: 'steelblue',
     textDecoration:'none'

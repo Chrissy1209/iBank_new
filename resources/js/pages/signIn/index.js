@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
-import Background from "./image/bg.png"
 
+import { Container } from 'react-bootstrap';
+
+import Background from "./image/bg.png"
 import Login from './components/login';
 import Signup from './components/signup';
 

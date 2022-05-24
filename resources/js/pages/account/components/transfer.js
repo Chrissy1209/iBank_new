@@ -1,4 +1,4 @@
-import {Col,Card} from 'react-bootstrap';
+import { Col,Card } from 'react-bootstrap';
 
 const Transfer = () => {
     return (

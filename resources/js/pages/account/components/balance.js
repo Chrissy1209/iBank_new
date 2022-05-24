@@ -1,5 +1,6 @@
-import {Col,Card,Button} from 'react-bootstrap';
+import { Col,Card,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
 const Balance = () => {
     return (
         <Col xs={12} style={{margin:'-50px 0'}}>

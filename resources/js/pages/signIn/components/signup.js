@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Form,Row,Col,Button } from 'react-bootstrap';
-import axios from 'axios';
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const margin = {
     margin: "10px 0",

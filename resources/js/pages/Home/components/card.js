@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Card,Col } from 'react-bootstrap';
 import { useState } from 'react';
+
 import Usd from 'public/image/USD.jpeg';
 
 const color = {

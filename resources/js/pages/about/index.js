@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Container,Row,Col,CardGroup } from 'react-bootstrap';
 import { useState } from 'react';
+
 import MyCard from './components/card.js';
 
 const backGroundColor = {

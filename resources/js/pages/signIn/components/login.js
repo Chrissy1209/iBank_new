@@ -1,8 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Form,Row,Col,Button } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { useState, useEffect } from 'react';
 
 const margin = {
     margin: "10px 0",

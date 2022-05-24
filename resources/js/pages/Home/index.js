@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Container,Row,Col } from 'react-bootstrap';
-import axios from "axios";
 import { useState, useEffect } from 'react';
+import axios from "axios";
 
 import Mycarousel from './components/carousel';
 import Rate from "./components/rate";

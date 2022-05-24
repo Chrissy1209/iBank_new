@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { Col,Card,CardGroup } from 'react-bootstrap';
 import axios from "axios";
-import { Col,Card } from 'react-bootstrap';
-import { CardGroup } from 'react-bootstrap';
+
 // import RateCard from './card';
 import Usd from '../image/USD.jpeg';
 

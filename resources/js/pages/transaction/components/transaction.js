@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Container,Form,Row,Col,Button } from 'react-bootstrap';
-import axios from 'axios';
 import { useState, useEffect } from 'react';
+import axios from 'axios';
+
 const padding = {
     padding: "0 0 75px 0",
 }

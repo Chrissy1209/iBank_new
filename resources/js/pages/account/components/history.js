@@ -1,4 +1,4 @@
-import {Col,Table} from 'react-bootstrap';
+import { Col,Table } from 'react-bootstrap';
 
 const History = () => {
     return (
