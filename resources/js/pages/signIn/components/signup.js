@@ -14,6 +14,12 @@ const errMesStyle = {
     fontSize: "12px",
 }
 
+const btn = {
+    margin: "15px 15px 10px 0",
+    color: "white",
+    borderColor: "white",
+}
+
 const Register = ({ setPage }) => {
     const [account, setAccount] = useState("")
     function accountChange(e) {
@@ -88,7 +94,7 @@ const Register = ({ setPage }) => {
     return(
         <Row className='align-items-center'>
             <Col md={12}>
-                <Form>
+                <Form style={{color: "white"}}>
                     <Form.Group style={margin} controlId="registerAccountName">
                         <Form.Label md={2}>姓名</Form.Label>
                         <Form.Control value={account} onChange={accountChange} md={8} name="name" type="text" placeholder="請輸入全名" required />
@@ -111,7 +117,7 @@ const Register = ({ setPage }) => {
                         <Form.Label>電話號碼</Form.Label>
                         <Form.Control value={phone} onChange={phoneChange} name="phone" type="text" required />
                     </Form.Group>
-                    <Button onClick={signIn} style={margin} variant="outline-secondary" type="submit">
+                    <Button onClick={signIn} style={btn} variant="outline-secondary" type="submit">
                         註冊
                     </Button>
                 </Form>
@@ -119,4 +125,5 @@ const Register = ({ setPage }) => {
         </Row>
     ); 
 }
+
 export default Register

@@ -1,7 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Container,Row,Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import React from 'react';
+
+import logo from "./image/logo.png"
+
 const app = {
     height: 100,
     margin: 0
@@ -12,6 +16,12 @@ const label = {
     textDecoration:'none'
 }
 
+const logoStyle = {
+    width: "120px",
+    marginRight: "60px",
+    marginBottom:" 8px",
+}
+
 const header=({ setPage })=>{
     function pageChange() {
         setPage("login");
@@ -20,8 +30,14 @@ const header=({ setPage })=>{
     return(
         <Container className="border" fluid style={app}>
             <Row className="justify-content-center" style={app}>
-                <Col className="align-items-center d-flex" xs={6}>
-                    <Link to="/" style={label}>LOGO</Link>
+                <Col style={logoStyle} className="align-items-center d-flex" xs={6}>
+                    <Link to="/">
+                        <img
+                            className="w-100 center"
+                            src={logo}
+                            alt="First slide"
+                        />      
+                    </Link>
                 </Col>
                 <Col className="align-items-center d-flex" xs={2}>
                     <Link to="/About" style={label}>About</Link>

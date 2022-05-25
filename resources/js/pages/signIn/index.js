@@ -8,10 +8,11 @@ import Signup from './components/signup';
 
 const app = {
     height:590,
-    backgroundImage: `url(${Background})`,
-    backgroundSize:'100%',
-    backgroundPosition: "center top",
-    backgroundRepeat: "no-repeat",
+    backgroundColor: "#354763",
+    // backgroundImage: `url(${Background})`,
+    // backgroundSize:'100%',
+    // backgroundPosition: "center top",
+    // backgroundRepeat: "no-repeat",
 }
 
 const SignIn = ({ page, setPage }) => {

@@ -5,21 +5,17 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+import logo from "../image/logoRound.png"
+import logoName from "../image/logoName.png"
+
 const margin = {
     margin: "10px 0",
-}
-
-const title = {
-    color: "white",
-    textAlign: "center",
-    margin: "40px 0 20px 0",
-    fontSize: "42px",
 }
 
 const btn = {
     margin: "15px 15px 10px 0",
     color: "white",
-    borderColor: "white"
+    borderColor: "white",
 }
 
 const Login = ({ setPage }) => {
@@ -35,21 +31,6 @@ const Login = ({ setPage }) => {
     }
 
     function logIn() {
-        // axios({
-        //     method: "GET",
-        //     url: "/api/myuser/logIn",
-        //     data: {
-        //         name: account,
-        //         email: password
-        //     }
-        // }).then((res) => {
-        //         console.log(res);
-        //         // console.log(res.data);
-        //         // console.log(res.config.data);
-        // }).catch((err) => {
-        //         console.log(err);
-        // })
-
         axios.get("/api/myuser/logIn", {account,password})
         .then(res => {
             console.log(res);
@@ -63,10 +44,28 @@ const Login = ({ setPage }) => {
     }
   
     return(
-        <Row>
-            <Col xs={12}>
-                <h1 style={title}>Login</h1>
-                <Form className="w-90">
+        <Row className='justify-content-center'>
+            <Col style={{ marginTop: "10px", marginBottom: "-25px" }} xs={8}>
+                <img
+                    className="w-100"
+                    src={logo}
+                    style={{
+                        marginBottom: "-110px",
+                    }}
+                    alt="Logo"
+                />
+                <img
+                    className="w-100"
+                    src={logoName}
+                    style={{
+                        padding: "36px 43px 36px 36px",//30px 37px 30px 30px
+                        marginBottom: "-170px",
+                    }}
+                    alt="Logo"
+                />
+            </Col>
+            <Col xs={8}>
+                <Form style={{color: "white"}} className="w-90">
                     <Form.Group onChange={accountChange} style={margin} controlId="loginAccountName">
                         <Form.Label>帳號</Form.Label>
                         <Form.Control name="name" type="text" placeholder="Account Name" />
@@ -75,7 +74,7 @@ const Login = ({ setPage }) => {
                         <Form.Label>密碼</Form.Label>
                         <Form.Control name="email" type="password" placeholder="Password" />
                     </Form.Group>
-                    <Form.Group style={margin} controlId="loginAccount">
+                    <Form.Group style={margin} className="justify-content-center" controlId="loginAccount">
                         {/* <Link style={label} to="/Account"> */}
                             <Button onClick={logIn} style={btn} variant="outline-secondary" type="submit">
                                 登入

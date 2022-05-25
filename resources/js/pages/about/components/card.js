@@ -12,10 +12,6 @@ const cardBodyHeight = {
     // height: "280px"
 }
 
-const cardPadding = {
-    padding: '10px 10px 20px 10px',
-}
-
 const textMargin = {
     marginTop: "15px",
     marginBottom: "4px",
@@ -28,7 +24,7 @@ const label = {
 
 const MyCard = ({ name, content, gitHub, email }) => {
     return(
-        <Col xs={12} style={cardPadding}>
+        <Col xs={12} style={{ padding: '10px 0', }}>
             <Card border="light" style={wall}>
                 <Card.Body style={cardBodyHeight}>
                     <Card.Title>{name}</Card.Title>

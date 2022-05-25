@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
-import Cat from "../image/cat.jpg";
-import Sea from '../image/sea.jpeg';
+import BGimage1 from "../image/iBankImage1.png"
+import BGimage2 from "../image/iBankImage2.png"
 
 const MyCarousel = () => {
   return (
@@ -10,17 +10,17 @@ const MyCarousel = () => {
         <Carousel.Item>
             <img
             className="w-100 center"
-            src={Cat}
+            src={BGimage1}
             alt="First slide"
-            style={{height:300,objectFit:'cover'}}
+            style={{height:300}}
             />
         </Carousel.Item>
         <Carousel.Item>
             <img
             className="w-100 center"
-            src={Cat}
+            src={BGimage2}
             alt="Second slide"
-            style={{height:300,objectFit:'cover',transform:"rotateY(180deg)"}}
+            style={{height:300,objectFit:'cover'}}
             />
         </Carousel.Item>
     </Carousel>

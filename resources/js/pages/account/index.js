@@ -8,11 +8,14 @@ import Member from './components/member';
 import Balance from './components/balance';
 import Transfer from './components/transfer';
 import History from './components/history';
+import Background from "./image/Background.png";
 
 const app = {
-    marginTop: "50px",
-    marginBottom: "50px",
-    height:'490px',
+    backgroundImage: `url(${Background})`,
+    backgroundSize:'100%',
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height:'590px',
 }
 
 const btn = {
@@ -60,21 +63,21 @@ const Account = () => {
     }
 
     return(
-        <Container className="d-flex justify-content-center align-item-top" style={app}>
+        <Container style={app} className="d-flex justify-content-center align-item-top">
             <Row >
-                <Col xs={4}>
+                <Col style={{marginTop: "60px",}} xs={4}>
                     <p style={btn} onClick={ToAccountDetail} className='click' id="Account">我的帳戶</p>
                 </Col>
-                <Col xs={4}>
+                <Col style={{marginTop: "60px",}} xs={4}>
                     <p style={btn} onClick={ToMemberProfile} id="Member">會員資料</p>
                 </Col >
-                <Col xs={4}>
+                <Col style={{marginTop: "60px",}} xs={4}>
                     <p style={btn} onClick={ToHistoryProfile} id="History">歷史紀錄</p>
                 </Col >
-                    {page === "AccountDetail" && <Balance />}
-                    {page === "AccountDetail" && <Transfer />}
-                    {page === "MemberProfile" && <Member />}
-                    {page === "HistoryProfile" && <History />}                            
+                {page === "AccountDetail" && <Balance />}
+                {page === "AccountDetail" && <Transfer />}
+                {page === "MemberProfile" && <Member />}
+                {page === "HistoryProfile" && <History />}                            
             </Row>  
         </Container>
     ); 
