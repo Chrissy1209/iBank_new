@@ -16,10 +16,23 @@ const errMesStyle = {
 
 const btn = {
     margin: "15px 15px 10px 0",
-    color: "white",
-    borderColor: "white",
+    // color: "white",
+    // borderColor: "white",
 }
-
+const form ={
+    color: 'black',
+    background: '#ffffff',
+    padding: '10px 20px',
+    borderRadius:' 10px',
+    //border: '1px solid #ffffff',
+    margin:'0 auto',
+    width:'85%'
+}
+const text ={
+    color:'white',
+    fontSize:'xx-large',
+    textAlign:'center'
+}
 const Register = ({ setPage }) => {
     const [account, setAccount] = useState("")
     function accountChange(e) {
@@ -94,7 +107,10 @@ const Register = ({ setPage }) => {
     return(
         <Row className='align-items-center'>
             <Col md={12}>
-                <Form style={{color: "white"}}>
+                <h5 style={text}>Singup</h5>
+            </Col>
+            <Col md={12}>
+                <Form style={form}>
                     <Form.Group style={margin} controlId="registerAccountName">
                         <Form.Label md={2}>姓名</Form.Label>
                         <Form.Control value={account} onChange={accountChange} md={8} name="name" type="text" placeholder="請輸入全名" required />
