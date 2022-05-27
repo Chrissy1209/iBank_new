@@ -3274,7 +3274,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/carousel */ "./resources/js/pages/home/components/carousel.js");
 /* harmony import */ var _components_rate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/rate */ "./resources/js/pages/home/components/rate.js");
-/* harmony import */ var _images_wave_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../images/wave.png */ "./public/images/wave.png");
+/* harmony import */ var _images_wave_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../../images/wave.png */ "./public/images/wave.png");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -3574,9 +3574,23 @@ var errMesStyle = {
   fontSize: "12px"
 };
 var btn = {
-  margin: "15px 15px 10px 0",
-  color: "white",
-  borderColor: "white"
+  margin: "15px 15px 10px 0" // color: "white",
+  // borderColor: "white",
+
+};
+var form = {
+  color: 'black',
+  background: '#ffffff',
+  padding: '10px 20px',
+  borderRadius: ' 10px',
+  //border: '1px solid #ffffff',
+  margin: '0 auto',
+  width: '85%'
+};
+var text = {
+  color: 'white',
+  fontSize: 'xx-large',
+  textAlign: 'center'
 };
 
 var Register = function Register(_ref) {
@@ -3684,14 +3698,18 @@ var Register = function Register(_ref) {
     });
   }
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "align-items-center",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      md: 12,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h5", {
+        style: text,
+        children: "Singup"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
       md: 12,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        style: {
-          color: "white"
-        },
+        style: form,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Group, {
           style: margin,
           controlId: "registerAccountName",
@@ -3771,7 +3789,7 @@ var Register = function Register(_ref) {
           children: "\u8A3B\u518A"
         })]
       })
-    })
+    })]
   });
 };
 
@@ -4291,7 +4309,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n    height: 740px;\n    width: 360px;\n    margin: auto!important;\n    /* margin: 0; */\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n      sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    /* border: 1px solid rgb(211, 209, 209); */\n  }\n  \n  code {\n    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n      monospace;\n  }\n  \n  #root {\n    height: 740px;\n  }", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n    height: 740px;\r\n    width: 360px;\r\n    margin: auto!important;\r\n    /* margin: 0; */\r\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\r\n      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\r\n      sans-serif;\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    /* border: 1px solid rgb(211, 209, 209); */\r\n  }\r\n  \r\n  code {\r\n    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\r\n      monospace;\r\n  }\r\n  \r\n  #root {\r\n    height: 740px;\r\n  }", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
