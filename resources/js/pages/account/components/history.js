@@ -1,6 +1,31 @@
 import { Col,Table } from 'react-bootstrap';
-
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 const History = () => {
+    const [history, setHistory] = useState([])
+
+    useEffect(()=>{
+        axios({
+            method: "GET",
+            url: "/api/transaction",
+        })
+        .then((res) => {
+            setHistory(res.data);
+            console.log(res.data);
+            // setHistory(res.data);
+            // res.data.forEach((a) => {
+            //     if(a.payee=='joyce890926@gmail.com' || a.payer=='joyce890926@gmail.com'){
+            //         console.log(a);
+            //         setHistory(a);
+   
+            //     }
+            // });
+        })
+        .catch((err) => {
+            console.log(err);
+
+        })
+    },[]);
     return (
         <Col xs={12} style={{margin:'-50px 0',height:'380px'}}>
             {/* <Card  className="text-end">
@@ -20,20 +45,22 @@ const History = () => {
                         <th>轉帳日期</th>
                     </tr>
                 </thead>
+                {/* <tbody>
+                    <tr>
+                        <td></td>
+                        <td>{history.payee}</td>
+                        <td>{history.transaction_amount}</td>
+                        <td></td>
+                    </tr>
+                </tbody> */}
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>aaaaaa</td>
-                        <td>3000</td>
-                        <td>2022-04-22</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>xxxxxx</td>
-                        <td>20000</td>
-                        <td>2022-04-24</td>
-                    </tr>
-                    
+                    {history.map((history,index)=>(
+                        <tr key={history.id}>
+                            <td>{++index}</td>
+                            <td>{history.payee}</td>{/* */}
+                            <td> {history.transaction_amount}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </Table>                       
         </Col>

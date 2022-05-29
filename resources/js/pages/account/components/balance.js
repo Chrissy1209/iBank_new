@@ -1,11 +1,26 @@
 import { Col,Card,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 const Balance = () => {
+    const [member, setMember] = useState([])
+    useEffect(()=>{
+        axios({
+            method: "GET",
+            url: "/api/myuser",
+        })
+        .then((res) => {
+            console.log(res);
+            setMember(res.data[0]);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    },[]);
     return (
         <Col xs={12} style={{marginTop:'-115px'}}>
             <Card className="text-end">
-                <Card.Header className="text-center" >9999</Card.Header>
+                <Card.Header className="text-center" >{member.balance}</Card.Header>
                 <Card.Body>
                     <Card.Text className="text-start" style={{borderBottom: "1px solid darkgray"}}>
                         帳戶餘額

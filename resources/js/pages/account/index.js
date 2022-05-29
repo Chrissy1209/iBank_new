@@ -19,7 +19,7 @@ const app = {
 }
 
 const btn = {
-    border:" 1px solid rgb(184, 184, 184)",
+    border:" 1px solid rgb(69, 92, 153)",
     borderRadius: "20px",
     textAlign: "center",
     margin: "10px 0",

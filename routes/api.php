@@ -22,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::resource("myuser", "App\Http\Controllers\Api\MyUserController");
+
+Route::resource("transaction", "App\Http\Controllers\Api\TransactionController");
